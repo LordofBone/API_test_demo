@@ -22,7 +22,7 @@ def test_api_response_can_list(get_request_json):
 
 def test_promotions_description(get_request_json):
     """
-    Acceptance criteria #3: Ensure Promotions contains the expected Description - acceptance criteria #3.
+    Acceptance criteria #3: Ensure Promotions contains the expected Description.
     """
     gallery = next((item for item in get_request_json['Promotions'] if item["Name"] == "Gallery"), None)
     assert "Good position in category" in gallery['Description']

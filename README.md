@@ -15,20 +15,17 @@ To run the API tests, you need to have Python installed along with the required 
 3. **View the Report**: After running the tests, you can view the generated report in `reports/report.html`.
 
 ### Acceptance Criteria covered:
-#### Name = "Carbon credits" ✅
+* #### Name = "Carbon credits" ✅
+   ``` bash
+   pytest test_api.py::test_api_response_name
+   ```
 
-``` bash
-pytest test_api.py::test_api_response_name
-```
+* #### CanRelist = true ✅
+   ``` bash
+   pytest test_api.py::test_api_response_can_list
+   ```
 
-#### CanRelist = true ✅
-
-``` bash
-pytest test_api.py::test_api_response_can_list
-```
-
-#### The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category" ✅
-
-``` bash
-pytest ./test_api.py::test_promotions_description
-```
+* #### The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category" ✅
+   ``` bash
+   pytest ./test_api.py::test_promotions_description
+   ```

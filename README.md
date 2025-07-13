@@ -19,6 +19,11 @@ To run the API tests, you need to have Python installed along with the required 
 4. **View the Report**: After running the tests, you can view the generated report in `reports/report.html`.
 
 ### Acceptance Criteria covered:
+* #### Response = 200 ✅
+   ``` bash
+   pytest ./test_api.py::test_api_response_status_code
+   ```
+  
 * #### Name = "Carbon credits" ✅
    ``` bash
    pytest test_api.py::test_api_response_name

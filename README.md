@@ -36,5 +36,5 @@ To run the API tests, you need to have Python installed along with the required 
 
 * #### The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category" ✅
    ``` bash
-   pytest ./test_api.py::test_promotions_description
+   pytest test_api.py::test_promotions_description
    ```

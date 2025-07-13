@@ -15,7 +15,8 @@ def base_url():
 @pytest.fixture(scope="session")
 def get_request(base_url):
     """
-    Makes a GET request to the provided base URL and returns the response - base response unformatted, for checking status etc.
+    Makes a GET request to the provided base URL and returns the response - base response unformatted, for checking
+    status etc.
     """
     response = requests.get(base_url)
     print(f"Requesting URL: {base_url}")
@@ -25,7 +26,8 @@ def get_request(base_url):
 @pytest.fixture(scope="session")
 def get_request_json(get_request):
     """
-    Automatically pretty-prints the JSON response for each test - can use this for tests that require validation of the responses content.
+    Automatically pretty-prints the JSON response for each test - can use this for tests that require validation of the
+    responses content.
     """
     data = get_request.json()
     json_formatted = json.dumps(data, indent=2)

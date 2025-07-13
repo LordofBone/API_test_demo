@@ -1,6 +1,7 @@
 def test_api_response_status_code(get_request):
     """
-    Test to ensure the API response status code is 200 (success).
+    Test to ensure the API response status code is 200 (success) - added this as a bonus, also if there are issues with
+    the api, this will identify specifically what error code was thrown.
     """
     assert get_request.status_code == 200
 

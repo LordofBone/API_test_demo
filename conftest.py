@@ -31,7 +31,7 @@ def get_request(base_url):
 def get_request_json(get_request):
     """
     Automatically pretty-prints the JSON response and prepares it for each test - can use this for tests that require
-    validation of the responses content.
+    validation of the responses content; also gives nice content feedback to the user.
     """
     data = get_request.json()
     json_formatted = json.dumps(data, indent=2)

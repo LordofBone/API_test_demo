@@ -8,6 +8,7 @@ Everything under here is scoped to the session, so that it only runs once per te
 Then we access the data from the API request for each test, without having to hit the API multiple times.
 """
 
+
 @pytest.fixture(scope="session")
 def base_url():
     """

@@ -21,7 +21,7 @@ To run the API tests, you need to have Python installed along with the required 
 ### Acceptance Criteria covered:
 * #### Response = 200 ✅
    ``` bash
-   pytest ./test_api.py::test_api_response_status_code
+   pytest test_api.py::test_api_response_status_code
    ```
   
 * #### Name = "Carbon credits" ✅
